@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: magalums
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/magaludb
+    username: root
+    password: rootpwd
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+notification:
+  cron:
+    # Run every 10 seconds
+    expression: "*/10 * * * * *"
